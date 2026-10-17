@@ -1,0 +1,14 @@
+Options -Indexes
+ErrorDocument 404 /404.html
+RedirectMatch 404 ^/_build(/.*)?$
+RedirectMatch 404 ^/(README\.md|\.git.*)$
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType text/css "access plus 30 days"
+ExpiresByType image/svg+xml "access plus 30 days"
+</IfModule>

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /_build/
+Sitemap: https://lightsteelblue-mallard-590121.hostingersite.com/sitemap.xml

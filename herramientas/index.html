@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Herramientas gratuitas para tu negocio | Pyme al Día</title>
+<meta name="description" content="Calculadoras gratuitas para pymes en Colombia: conversor de UVT a pesos, precio de venta según margen y punto de equilibrio.">
+<link rel="canonical" href="https://lightsteelblue-mallard-590121.hostingersite.com/herramientas/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Herramientas gratuitas para tu negocio | Pyme al Día">
+<meta property="og:description" content="Calculadoras gratuitas para pymes en Colombia: conversor de UVT a pesos, precio de venta según margen y punto de equilibrio.">
+<meta property="og:url" content="https://lightsteelblue-mallard-590121.hostingersite.com/herramientas/">
+<meta property="og:site_name" content="Pyme al Día">
+<meta property="og:locale" content="es_CO">
+<meta name="google-adsense-account" content="ca-pub-5896302767494797">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/estilos.css?v=1">
+<link rel="alternate" type="application/rss+xml" title="Pyme al Día" href="/feed.xml">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5896302767494797" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="/"><span class="brand-mark">PD</span><span><strong>Pyme al Día</strong><small>Guías prácticas para negocios en Colombia</small></span></a>
+    <nav class="main-nav" aria-label="Principal">
+      <a href="/guias/">Guías</a>
+      <a href="/herramientas/">Herramientas</a>
+      <a href="/quienes-somos/">Quiénes somos</a>
+      <a href="/contacto/">Contacto</a>
+    </nav>
+  </div>
+  <div class="cat-bar"><div class="wrap cat-scroll"><a href="/categoria/finanzas/">Finanzas y costos</a><a href="/categoria/impuestos/">Impuestos y DIAN</a><a href="/categoria/formalizacion/">Formalización y trámites</a><a href="/categoria/ventas/">Ventas y marketing</a><a href="/categoria/operacion/">Operación y procesos</a><a href="/categoria/legal/">Laboral y legal</a><a href="/categoria/digital/">Herramientas digitales</a></div></div>
+</header>
+<main id="contenido">
+<div class="wrap narrow page"><h1>Herramientas gratuitas para tu negocio</h1><p class="meta">Última actualización: 16 de octubre de 2026</p><div class="prose"><p>Calculadoras sencillas para resolver en segundos las cuentas que más se repiten en un negocio. Funcionan en tu navegador: no guardamos los datos que escribes.</p>
+
+<h2 id="uvt">Conversor de UVT a pesos</h2>
+<div class="tool">
+  <label for="uvt-anio">Año</label>
+  <select id="uvt-anio">
+    <option value="52374">2026 — $52.374</option>
+    <option value="49799">2025 — $49.799</option>
+  </select>
+  <label for="uvt-cant">Cantidad de UVT</label>
+  <input id="uvt-cant" type="number" min="0" step="any" value="100" inputmode="decimal">
+  <output id="uvt-res"></output>
+</div>
+<p class="small">Valor de la UVT 2026 fijado por la DIAN en la Resolución 000238 de 2025. Lee la guía <a href="/guias/que-es-la-uvt-y-como-se-usa/">qué es la UVT y cómo se usa</a>.</p>
+
+<h2 id="precio">Precio de venta según el margen que quieres</h2>
+<div class="tool">
+  <label for="p-costo">Costo unitario (pesos)</label>
+  <input id="p-costo" type="number" min="0" step="any" value="20000" inputmode="decimal">
+  <label for="p-margen">Margen de ganancia deseado sobre el precio (%)</label>
+  <input id="p-margen" type="number" min="0" max="99" step="any" value="40" inputmode="decimal">
+  <label for="p-iva">IVA que debes cobrar</label>
+  <select id="p-iva"><option value="0">No cobro IVA</option><option value="5">5 %</option><option value="19" selected>19 %</option></select>
+  <output id="p-res"></output>
+</div>
+<p class="small">Explicación completa en <a href="/guias/como-calcular-el-precio-de-venta-de-un-producto/">cómo calcular el precio de venta de un producto</a>.</p>
+
+<h2 id="equilibrio">Punto de equilibrio</h2>
+<div class="tool">
+  <label for="e-fijos">Costos fijos del mes (pesos)</label>
+  <input id="e-fijos" type="number" min="0" step="any" value="6000000" inputmode="decimal">
+  <label for="e-precio">Precio de venta por unidad, sin IVA (pesos)</label>
+  <input id="e-precio" type="number" min="0" step="any" value="35000" inputmode="decimal">
+  <label for="e-var">Costo variable por unidad (pesos)</label>
+  <input id="e-var" type="number" min="0" step="any" value="20000" inputmode="decimal">
+  <output id="e-res"></output>
+</div>
+<p class="small">Aprende a interpretarlo en <a href="/guias/punto-de-equilibrio-como-calcularlo/">punto de equilibrio: cómo calcularlo</a>.</p>
+
+<script>
+(function(){
+  var cop = new Intl.NumberFormat('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0});
+  var num = new Intl.NumberFormat('es-CO',{maximumFractionDigits:1});
+  function v(id){ return parseFloat(document.getElementById(id).value) || 0; }
+  function uvt(){
+    document.getElementById('uvt-res').textContent = num.format(v('uvt-cant')) + ' UVT = ' + cop.format(v('uvt-cant') * v('uvt-anio'));
+  }
+  function precio(){
+    var c=v('p-costo'), m=v('p-margen'), iva=v('p-iva'), out=document.getElementById('p-res');
+    if(m>=100){ out.textContent='El margen debe ser menor que 100 %.'; return; }
+    var p=c/(1-m/100);
+    out.textContent='Precio sin IVA: '+cop.format(p)+' · Precio al público con IVA: '+cop.format(p*(1+iva/100))+' · Ganancia por unidad: '+cop.format(p-c);
+  }
+  function equilibrio(){
+    var f=v('e-fijos'), p=v('e-precio'), cv=v('e-var'), out=document.getElementById('e-res');
+    if(p<=cv){ out.textContent='El precio debe ser mayor que el costo variable; de lo contrario cada venta genera pérdida.'; return; }
+    var u=Math.ceil(f/(p-cv));
+    out.textContent='Necesitas vender '+num.format(u)+' unidades al mes ('+cop.format(u*p)+' en ventas sin IVA) para no perder ni ganar.';
+  }
+  ['uvt-anio','uvt-cant'].forEach(function(i){document.getElementById(i).addEventListener('input',uvt);});
+  ['p-costo','p-margen','p-iva'].forEach(function(i){document.getElementById(i).addEventListener('input',precio);});
+  ['e-fijos','e-precio','e-var'].forEach(function(i){document.getElementById(i).addEventListener('input',equilibrio);});
+  uvt(); precio(); equilibrio();
+})();
+</script></div></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-brand">Pyme al Día</p>
+      <p>Guías gratuitas y en lenguaje sencillo para emprendedores, independientes y pequeñas empresas en Colombia.</p>
+      <p class="small">El contenido es informativo y no reemplaza la asesoría de un contador, abogado o asesor financiero.</p>
+    </div>
+    <div>
+      <p class="footer-title">Explorar</p>
+      <a href="/guias/">Todas las guías</a>
+      <a href="/herramientas/">Herramientas gratuitas</a>
+      <a href="/quienes-somos/">Quiénes somos</a>
+      <a href="/politica-editorial/">Política editorial</a>
+      <a href="/contacto/">Contacto</a>
+    </div>
+    <div>
+      <p class="footer-title">Legal</p>
+      <a href="/politica-de-privacidad/">Política de privacidad</a>
+      <a href="/politica-de-cookies/">Política de cookies</a>
+      <a href="/terminos-y-condiciones/">Términos y condiciones</a>
+      <a href="/aviso-legal/">Aviso legal</a>
+    </div>
+  </div>
+  <div class="wrap copyright">© 2026 Pyme al Día · Hecho en Colombia</div>
+</footer>
+</body>
+</html>

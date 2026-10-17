@@ -1,0 +1,18 @@
+{
+  "site_name": "Pyme al Día",
+  "tagline": "Guías prácticas para negocios en Colombia",
+  "base_url": "https://lightsteelblue-mallard-590121.hostingersite.com",
+  "adsense_client": "ca-pub-5896302767494797",
+  "contact_email": "",
+  "whatsapp": "573009413721",
+  "lang": "es-CO",
+  "categories": {
+    "finanzas": "Finanzas y costos",
+    "impuestos": "Impuestos y DIAN",
+    "formalizacion": "Formalización y trámites",
+    "ventas": "Ventas y marketing",
+    "operacion": "Operación y procesos",
+    "legal": "Laboral y legal",
+    "digital": "Herramientas digitales"
+  }
+}

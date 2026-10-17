@@ -1,0 +1,71 @@
+---
+title: Herramientas gratuitas para tu negocio
+slug: herramientas
+description: Calculadoras gratuitas para pymes en Colombia: conversor de UVT a pesos, precio de venta según margen y punto de equilibrio.
+updated: 2026-10-16
+---
+<p>Calculadoras sencillas para resolver en segundos las cuentas que más se repiten en un negocio. Funcionan en tu navegador: no guardamos los datos que escribes.</p>
+
+<h2 id="uvt">Conversor de UVT a pesos</h2>
+<div class="tool">
+  <label for="uvt-anio">Año</label>
+  <select id="uvt-anio">
+    <option value="52374">2026 — $52.374</option>
+    <option value="49799">2025 — $49.799</option>
+  </select>
+  <label for="uvt-cant">Cantidad de UVT</label>
+  <input id="uvt-cant" type="number" min="0" step="any" value="100" inputmode="decimal">
+  <output id="uvt-res"></output>
+</div>
+<p class="small">Valor de la UVT 2026 fijado por la DIAN en la Resolución 000238 de 2025. Lee la guía <a href="/guias/que-es-la-uvt-y-como-se-usa/">qué es la UVT y cómo se usa</a>.</p>
+
+<h2 id="precio">Precio de venta según el margen que quieres</h2>
+<div class="tool">
+  <label for="p-costo">Costo unitario (pesos)</label>
+  <input id="p-costo" type="number" min="0" step="any" value="20000" inputmode="decimal">
+  <label for="p-margen">Margen de ganancia deseado sobre el precio (%)</label>
+  <input id="p-margen" type="number" min="0" max="99" step="any" value="40" inputmode="decimal">
+  <label for="p-iva">IVA que debes cobrar</label>
+  <select id="p-iva"><option value="0">No cobro IVA</option><option value="5">5 %</option><option value="19" selected>19 %</option></select>
+  <output id="p-res"></output>
+</div>
+<p class="small">Explicación completa en <a href="/guias/como-calcular-el-precio-de-venta-de-un-producto/">cómo calcular el precio de venta de un producto</a>.</p>
+
+<h2 id="equilibrio">Punto de equilibrio</h2>
+<div class="tool">
+  <label for="e-fijos">Costos fijos del mes (pesos)</label>
+  <input id="e-fijos" type="number" min="0" step="any" value="6000000" inputmode="decimal">
+  <label for="e-precio">Precio de venta por unidad, sin IVA (pesos)</label>
+  <input id="e-precio" type="number" min="0" step="any" value="35000" inputmode="decimal">
+  <label for="e-var">Costo variable por unidad (pesos)</label>
+  <input id="e-var" type="number" min="0" step="any" value="20000" inputmode="decimal">
+  <output id="e-res"></output>
+</div>
+<p class="small">Aprende a interpretarlo en <a href="/guias/punto-de-equilibrio-como-calcularlo/">punto de equilibrio: cómo calcularlo</a>.</p>
+
+<script>
+(function(){
+  var cop = new Intl.NumberFormat('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0});
+  var num = new Intl.NumberFormat('es-CO',{maximumFractionDigits:1});
+  function v(id){ return parseFloat(document.getElementById(id).value) || 0; }
+  function uvt(){
+    document.getElementById('uvt-res').textContent = num.format(v('uvt-cant')) + ' UVT = ' + cop.format(v('uvt-cant') * v('uvt-anio'));
+  }
+  function precio(){
+    var c=v('p-costo'), m=v('p-margen'), iva=v('p-iva'), out=document.getElementById('p-res');
+    if(m>=100){ out.textContent='El margen debe ser menor que 100 %.'; return; }
+    var p=c/(1-m/100);
+    out.textContent='Precio sin IVA: '+cop.format(p)+' · Precio al público con IVA: '+cop.format(p*(1+iva/100))+' · Ganancia por unidad: '+cop.format(p-c);
+  }
+  function equilibrio(){
+    var f=v('e-fijos'), p=v('e-precio'), cv=v('e-var'), out=document.getElementById('e-res');
+    if(p<=cv){ out.textContent='El precio debe ser mayor que el costo variable; de lo contrario cada venta genera pérdida.'; return; }
+    var u=Math.ceil(f/(p-cv));
+    out.textContent='Necesitas vender '+num.format(u)+' unidades al mes ('+cop.format(u*p)+' en ventas sin IVA) para no perder ni ganar.';
+  }
+  ['uvt-anio','uvt-cant'].forEach(function(i){document.getElementById(i).addEventListener('input',uvt);});
+  ['p-costo','p-margen','p-iva'].forEach(function(i){document.getElementById(i).addEventListener('input',precio);});
+  ['e-fijos','e-precio','e-var'].forEach(function(i){document.getElementById(i).addEventListener('input',equilibrio);});
+  uvt(); precio(); equilibrio();
+})();
+</script>
