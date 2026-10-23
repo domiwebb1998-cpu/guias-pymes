@@ -10,9 +10,9 @@ Se pueden agregar temas nuevos al final. Categorías válidas: finanzas, impuest
 - [x] 2026-10-16 · operacion · Separar finanzas personales y del negocio
 - [x] 2026-10-19 · formalizacion · Cómo sacar el RUT en Colombia como persona natural o empresa, paso a paso
 - [x] 2026-10-21 · ventas · Cómo crear y optimizar el Perfil de Empresa en Google para aparecer en Google Maps
+- [x] 2026-10-23 · finanzas · Flujo de caja mensual para pymes: cómo hacerlo en una hoja de cálculo
 
 ## Pendientes
-- [ ] finanzas · Flujo de caja mensual para pymes: cómo hacerlo en una hoja de cálculo
 - [ ] impuestos · Régimen Simple de Tributación: quién puede inscribirse y cuándo conviene
 - [ ] formalizacion · Persona natural o SAS: diferencias y cómo decidir
 - [ ] operacion · Control de inventario para negocios pequeños: método paso a paso
