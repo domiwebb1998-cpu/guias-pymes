@@ -14,9 +14,9 @@ Se pueden agregar temas nuevos al final. Categorías válidas: finanzas, impuest
 - [x] 2026-10-26 · impuestos · Régimen Simple de Tributación: quién puede inscribirse y cuándo conviene
 - [x] 2026-10-28 · formalizacion · Persona natural o SAS: diferencias y cómo decidir
 - [x] 2026-10-30 · operacion · Control de inventario para negocios pequeños: método paso a paso
+- [x] 2026-11-02 · impuestos · Facturación electrónica: qué es, quién está obligado y cómo empezar
 
 ## Pendientes
-- [ ] impuestos · Facturación electrónica: qué es, quién está obligado y cómo empezar
 - [ ] legal · Cómo hacer un contrato de prestación de servicios: cláusulas esenciales
 - [ ] ventas · WhatsApp Business para vender: catálogo, respuestas rápidas y etiquetas
 - [ ] finanzas · Margen bruto, margen operativo y margen neto explicados con ejemplos
