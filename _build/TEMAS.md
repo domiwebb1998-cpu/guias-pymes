@@ -19,9 +19,9 @@ Se pueden agregar temas nuevos al final. Categorías válidas: finanzas, impuest
 - [x] 2026-11-06 · ventas · WhatsApp Business para vender: catálogo, respuestas rápidas y etiquetas
 - [x] 2026-11-09 · finanzas · Margen bruto, margen operativo y margen neto explicados con ejemplos
 - [x] 2026-11-11 · formalizacion · Cómo registrar una empresa en la Cámara de Comercio paso a paso
+- [x] 2026-11-13 · legal · Política de tratamiento de datos personales para un negocio pequeño (Ley 1581)
 
 ## Pendientes
-- [ ] legal · Política de tratamiento de datos personales para un negocio pequeño (Ley 1581)
 - [ ] impuestos · Calendario tributario: cómo organizar las fechas de tu negocio
 - [ ] operacion · Cómo hacer el cierre de caja diario sin descuadres
 - [ ] ventas · Cómo calcular el costo de adquisición de clientes y cuánto invertir en publicidad
