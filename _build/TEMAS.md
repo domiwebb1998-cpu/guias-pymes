@@ -21,9 +21,9 @@ Se pueden agregar temas nuevos al final. Categorías válidas: finanzas, impuest
 - [x] 2026-11-11 · formalizacion · Cómo registrar una empresa en la Cámara de Comercio paso a paso
 - [x] 2026-11-13 · legal · Política de tratamiento de datos personales para un negocio pequeño (Ley 1581)
 - [x] 2026-11-16 · impuestos · Calendario tributario: cómo organizar las fechas de tu negocio
+- [x] 2026-11-18 · operacion · Cómo hacer el cierre de caja diario sin descuadres
 
 ## Pendientes
-- [ ] operacion · Cómo hacer el cierre de caja diario sin descuadres
 - [ ] ventas · Cómo calcular el costo de adquisición de clientes y cuánto invertir en publicidad
 - [ ] legal · Cómo contratar al primer empleado: obligaciones básicas del empleador
 - [ ] finanzas · Cómo cobrar cartera: recordatorios, acuerdos de pago y prevención
