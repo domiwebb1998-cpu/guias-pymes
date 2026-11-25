@@ -24,9 +24,9 @@ Se pueden agregar temas nuevos al final. Categorías válidas: finanzas, impuest
 - [x] 2026-11-18 · operacion · Cómo hacer el cierre de caja diario sin descuadres
 - [x] 2026-11-20 · ventas · Cómo calcular el costo de adquisición de clientes y cuánto invertir en publicidad
 - [x] 2026-11-23 · legal · Cómo contratar al primer empleado: obligaciones básicas del empleador
+- [x] 2026-11-25 · finanzas · Cómo cobrar cartera: recordatorios, acuerdos de pago y prevención
 
 ## Pendientes
-- [ ] finanzas · Cómo cobrar cartera: recordatorios, acuerdos de pago y prevención
 - [ ] digital · Herramientas gratuitas para administrar una pyme
 - [ ] impuestos · Retención en la fuente explicada para dueños de negocio
 - [ ] formalizacion · Registro de marca ante la SIC: cuándo hacerlo y cómo funciona
